@@ -16,10 +16,10 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net-Jabber - Jabber protocol interface.
+Net::Jabber - Jabber protocol interface.
 
 %description -l pl
-Net-Jabber - Obs³uga protoko³u Jabber.
+Net::Jabber - Obs³uga protoko³u Jabber.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
