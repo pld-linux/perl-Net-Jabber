@@ -4,7 +4,7 @@
 Summary:	Jabber perl module
 Summary(pl):	Modu³ perla dla protoko³u Jabber
 Name:		perl-Net-Jabber
-Version:	1.27
+Version:	1.28
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
