@@ -12,7 +12,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Digest-SHA1 >= 1.02
 BuildRequires:	perl-XML-Stream >= 1.15
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
