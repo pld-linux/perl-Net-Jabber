@@ -1,18 +1,19 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Jabber
-Summary:	Jabber perl module
-Summary(pl):	Modu³ perla dla protoko³u Jabber
+Summary:	Jabber Perl module
+Summary(pl):	Modu³ Perla dla protoko³u Jabber
 Name:		perl-Net-Jabber
 Version:	1.26
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e8d706cd1b0df86646657304aa84faa7
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Digest-SHA1 >= 1.02
 BuildRequires:	perl-XML-Stream >= 1.15
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,6 +25,7 @@ Net::Jabber - Obs³uga protoko³u Jabber.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%{__perl} -pi -e 's/^(use 5.006_)0(01;)(.*)$/$1$2$3/' Jabber/X.pm
 
 %build
 echo -e "y\ny\ny\n" |perl Makefile.PL
