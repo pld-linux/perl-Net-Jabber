@@ -4,13 +4,16 @@
 Summary:	Jabber perl module
 Summary(pl):	Modu³ perla dla protoko³u Jabber
 Name:		perl-Net-Jabber
-Version:	1.0024
+Version:	1.26
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-Digest-SHA1 >= 1.02
+BuildRequires:	perl-XML-Stream >= 1.15
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +27,7 @@ Net::Jabber - Obs³uga protoko³u Jabber.
 
 %build
 echo -e "y\ny\ny\n" |perl Makefile.PL
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
