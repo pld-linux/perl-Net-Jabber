@@ -1,9 +1,12 @@
+%define	pdir	Net
+%define	pnam	Jabber
 %include	/usr/lib/rpm/macros.perl
 Summary:	Jabber perl module
 Summary(pl):	Modu³ perla dla protoko³u Jabber
 Name:		perl-Net-Jabber
 Version:	1.0022
-Release:	1
+Release:	2
+
 License:	LGPL
 Group:		Development/Languages/Perl
 Group(cs):	Vıvojové prostøedky/Programovací jazyky/Perl
@@ -14,7 +17,7 @@ Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Jabber-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
