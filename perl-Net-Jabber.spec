@@ -4,15 +4,15 @@
 Summary:	Jabber Perl module
 Summary(pl):	Modu³ Perla dla protoko³u Jabber
 Name:		perl-Net-Jabber
-Version:	1.28
-Release:	3
+Version:	1.29
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	78f55324b504a02760307011021991e2
+# Source0-md5:	5465efa832cd451cb6066929d51b7b0d
 BuildRequires:	perl-devel >= 5.005_03-14
 BuildRequires:	perl-Digest-SHA1 >= 1.02
-BuildRequires:	perl-XML-Stream >= 1.15
+BuildRequires:	perl-XML-Stream >= 1.17
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
