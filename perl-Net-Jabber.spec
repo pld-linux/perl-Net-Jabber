@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Jabber
+%define		pdir	Net
+%define		pnam	Jabber
 Summary:	Net::Jabber Perl module - access to the Jabber protocol
 Summary(pl):	Modu³ Perla Net::Jabber - dostêp do protoko³u Jabbera
 Name:		perl-Net-Jabber
