@@ -8,12 +8,12 @@
 Summary:	Net::Jabber Perl module - access to the Jabber protocol
 Summary(pl):	Modu³ Perla Net::Jabber - dostêp do protoko³u Jabbera
 Name:		perl-Net-Jabber
-Version:	1.30
-Release:	2
+Version:	2.0
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	450ac1976c9b9401689227eb75555abe
+# Source0-md5:	1fd348fb9a1a6c5a167ae862ed89cd53
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Digest-SHA1 >= 1.02
 BuildRequires:	perl-XML-Stream >= 1.17
