@@ -48,7 +48,9 @@ echo -e "y\ny\ny\n" | perl Makefile.PL \
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
-%{__make} install UNINST=0 DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	UNINST=0 \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
