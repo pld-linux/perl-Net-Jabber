@@ -1,8 +1,12 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (uses network!)
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Jabber
-Summary:	Jabber Perl module
-Summary(pl):	Modu³ Perla dla protoko³u Jabber
+Summary:	Net::Jabber Perl module - access to the Jabber protocol
+Summary(pl):	Modu³ Perla Net::Jabber - dostêp do protoko³u Jabbera
 Name:		perl-Net-Jabber
 Version:	1.29
 Release:	1
@@ -18,10 +22,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::Jabber - Jabber protocol interface.
+Net::Jabber is a collection of Perl modules that provide a Perl
+Developer access to the Jabber protocol. Using OOP modules they
+provide a clean interface to writing anything from a full client to a
+simple protocol tester.
 
 %description -l pl
-Net::Jabber - Obs³uga protoko³u Jabber.
+Net::Jabber to zbiór modu³ów Perla daj±cych programi¶cie perlowemu
+dostêp do protoko³u Jabbera. Zorientowane obiektowo modu³y daj± czysty
+interfejs do pisania wszystkiego od pe³nego klienta do prostego
+testera protoko³u.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,6 +41,8 @@ Net::Jabber - Obs³uga protoko³u Jabber.
 echo -e "y\ny\ny\n" | perl Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
