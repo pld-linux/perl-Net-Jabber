@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Jabber
 Summary:	Net::Jabber Perl module - access to the Jabber protocol
-Summary(pl):	Modu≥ Perla Net::Jabber - dostÍp do protoko≥u Jabbera
+Summary(pl.UTF-8):   Modu≈Ç Perla Net::Jabber - dostƒôp do protoko≈Çu Jabbera
 Name:		perl-Net-Jabber
 Version:	2.0
 Release:	1
@@ -27,11 +27,11 @@ Developer access to the Jabber protocol. Using OOP modules they
 provide a clean interface to writing anything from a full client to a
 simple protocol tester.
 
-%description -l pl
-Net::Jabber to zbiÛr modu≥Ûw Perla daj±cych programi∂cie perlowemu
-dostÍp do protoko≥u Jabbera. Zorientowane obiektowo modu≥y daj± czysty
-interfejs do pisania wszystkiego od pe≥nego klienta do prostego
-testera protoko≥u.
+%description -l pl.UTF-8
+Net::Jabber to zbi√≥r modu≈Ç√≥w Perla dajƒÖcych programi≈õcie perlowemu
+dostƒôp do protoko≈Çu Jabbera. Zorientowane obiektowo modu≈Çy dajƒÖ czysty
+interfejs do pisania wszystkiego od pe≈Çnego klienta do prostego
+testera protoko≈Çu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
