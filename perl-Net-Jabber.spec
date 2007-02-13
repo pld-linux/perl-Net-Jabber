@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Jabber
 Summary:	Net::Jabber Perl module - access to the Jabber protocol
-Summary(pl.UTF-8):   Moduł Perla Net::Jabber - dostęp do protokołu Jabbera
+Summary(pl.UTF-8):	Moduł Perla Net::Jabber - dostęp do protokołu Jabbera
 Name:		perl-Net-Jabber
 Version:	2.0
 Release:	1
