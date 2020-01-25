@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	Jabber
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Jabber Perl module - access to the Jabber protocol
 Summary(pl.UTF-8):	Moduł Perla Net::Jabber - dostęp do protokołu Jabbera
 Name:		perl-Net-Jabber
